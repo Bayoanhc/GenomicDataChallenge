@@ -1,14 +1,12 @@
 # GenomicDataChallenge
 
-Calculating genomic coverage from next-generation
-sequencing data
+# Calculating genomic coverage from next-generation sequencing data
 Overview
-Our team performs tumor genotyping for cancer patients, with the aim of detecting abnormalities which can then guide
-personalized therapy. Our results are routinely used in cancer care, often being the last hope for people with Stage III and
-Stage IV tumors for whom traditional therapies have failed.
-In this puzzle, we ask you to solve a real-world DNA sequencing problem. Don't worry, we assume no
-biology/bioinformatics experience. We give you five days for flexibility, but we definitely don't expect you to spend more
-than a couple of hours total working on it. Most of all, we hope you have fun!
+
+Our team performs tumor genotyping for cancer patients, with the aim of detecting abnormalities which can then guide personalized therapy. Our results are routinely used in cancer care, often being the last hope for people with Stage III and Stage IV tumors for whom traditional therapies have failed.
+
+In this puzzle, we ask you to solve a real-world DNA sequencing problem. Don't worry, we assume no biology/bioinformatics experience. We give you five days for flexibility, but we definitely don't expect you to spend more than a couple of hours total working on it. Most of all, we hope you have fun!
+
 Deliverables
 We are looking for solutions that are correct, creative and cleanly implemented. Bare-metal performance is important but
 isn't our primary concern -- we will favor slower solutions that are readable and well-documented, over ones that are fast
