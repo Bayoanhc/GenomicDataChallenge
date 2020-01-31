@@ -29,28 +29,28 @@ A key component of making sense of NGS data is calculating "coverage" (also know
 ## Data
 You have two files:
 reads.csv : this file contains approximately 2 million reads, one read per row, with two columns corresponding to the start position and length of the read. For example, in the excerpt below, the first read starts at position 101843359 and has a length of 151 base pairs.
-start,length
-101843359,151
-101891952,151
-148529640,139
-101921163,42
-139044920,150
-151860131,150
-140476640,147
-50358597,150
-101813657,150
+start,length  
+101843359,151  
+101891952,151  
+148529640,139  
+101921163,42  
+139044920,150  
+151860131,150  
+140476640,147  
+50358597,150  
+101813657,150  
 
 loci.csv : this file contains 1000 positions of interest and a blank "coverage" column. In the course of this exercise, you will populate the coverage column with the number of reads overlapping that position.
-position,coverage
-101844980,
-104748289,
-101892012,
-101870868,
-148512562,
-101921050,
-101891648,
-101891584,
-101892180,
+position,coverage  
+101844980,  
+104748289,  
+101892012,  
+101870868,  
+148512562,  
+101921050,  
+101891648,  
+101891584,  
+101892180,  
 
 The exercise is to write a computer program in Python3 (only using the standard library) to calculate the coverage
 for each of the positions in loci.csv, based on the reads in reads.csv. You are expected to include unit tests for the
@@ -58,39 +58,39 @@ accuracy of your program. Coverage is defined as the number of reads which overl
 
 ## Examples
 Suppose you have the following 2 reads:
-start,length
-10,30
-20,40
+start,length  
+10,30  
+20,40  
 
 Now suppose we're interested in the coverage at 3 loci: 5, 15, and 30. None of our reads overlap 5, so the coverage there is 0. Only the first read overlaps 15, so the coverage at 15 is 1. Both reads overlap 30, giving a coverage of 2:
-position,coverage
-5,0
-15,1
-30,2
+position,coverage  
+5,0  
+15,1  
+30,2  
 
 Expected output
 As a sanity check for your implementation, here's the expected output for the first 20 loci in loci.csv:
-position,coverage
-101844980,1190
-104748289,12206
-101892012,141295
-101870868,6809
-148512562,6993
-101921050,1096
-101891648,62732
-101891584,43740
-101892180,78510
-101891581,42854
-148529493,62
-139044861,221
-101921385,24560
-151901886,1
-151878406,2581
-139102584,84
-101840276,6209
-101877167,36
-101920996,431
-139044978,213040
+position,coverage  
+101844980,1190  
+104748289,12206  
+101892012,141295  
+101870868,6809  
+148512562,6993  
+101921050,1096  
+101891648,62732  
+101891584,43740  
+101892180,78510  
+101891581,42854  
+148529493,62  
+139044861,221  
+101921385,24560    
+151901886,1  
+151878406,2581  
+139102584,84  
+101840276,6209  
+101877167,36  
+101920996,431  
+139044978,213040  
 
 ## Bonus question
 Please measure run-time performance of developed code in terms of numbers of lines in reads.csv and loci.csv. As
