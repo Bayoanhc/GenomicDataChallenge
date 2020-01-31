@@ -28,7 +28,7 @@ A key component of making sense of NGS data is calculating "coverage" (also know
 
 ## Data
 You have two files:
-reads.csv : this file contains approximately 2 million reads, one read per row, with two columns corresponding to the start position and length of the read. For example, in the excerpt below, the first read starts at position 101843359 and has a length of 151 base pairs.
+reads.csv : this file contains approximately 2 million reads, one read per row, with two columns corresponding to the start position and length of the read. For example, in the excerpt below, the first read starts at position 101843359 and has a length of 151 base pairs.  
 start,length  
 101843359,151  
 101891952,151  
@@ -40,7 +40,7 @@ start,length
 50358597,150  
 101813657,150  
 
-loci.csv : this file contains 1000 positions of interest and a blank "coverage" column. In the course of this exercise, you will populate the coverage column with the number of reads overlapping that position.
+loci.csv : this file contains 1000 positions of interest and a blank "coverage" column. In the course of this exercise, you will populate the coverage column with the number of reads overlapping that position.  
 position,coverage  
 101844980,  
 104748289,  
@@ -57,19 +57,19 @@ for each of the positions in loci.csv, based on the reads in reads.csv. You are 
 accuracy of your program. Coverage is defined as the number of reads which overlap that position.
 
 ## Examples
-Suppose you have the following 2 reads:
+Suppose you have the following 2 reads:  
 start,length  
 10,30  
 20,40  
 
-Now suppose we're interested in the coverage at 3 loci: 5, 15, and 30. None of our reads overlap 5, so the coverage there is 0. Only the first read overlaps 15, so the coverage at 15 is 1. Both reads overlap 30, giving a coverage of 2:
+Now suppose we're interested in the coverage at 3 loci: 5, 15, and 30. None of our reads overlap 5, so the coverage there is 0. Only the first read overlaps 15, so the coverage at 15 is 1. Both reads overlap 30, giving a coverage of 2:  
 position,coverage  
 5,0  
 15,1  
 30,2  
 
 Expected output
-As a sanity check for your implementation, here's the expected output for the first 20 loci in loci.csv:
+As a sanity check for your implementation, here's the expected output for the first 20 loci in loci.csv:  
 position,coverage  
 101844980,1190  
 104748289,12206  
